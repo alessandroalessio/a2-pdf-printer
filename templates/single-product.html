@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{{post_title}}</title>
+		<style>
+			@page {
+				margin: 0px;
+			}
+			body {
+				margin: 0px;
+				padding: 0px;
+				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+					'Lucida Sans', Arial, sans-serif;
+			}
+			header {
+				text-align: center;
+				background-color: #131e24;
+				margin: 0 0 40px 0;
+				padding: 40px 0;
+			}
+			main {
+				max-width: 80%;
+				margin: 0 auto;
+			}
+			footer {
+				width: 100%;
+				margin: 40px 0 0 0;
+				display: flex;
+				font-size: 14px;
+				background-color: #232628;
+				color: #8b8f90;
+				text-align: center;
+				padding: 40px;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+			}
+			footer p {
+				text-align: center;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img
+				src="http://localhost/wp-content/uploads/2016/11/logo_header.jpg"
+				alt=""
+			/>
+		</header>
+		<main>
+			<h2>{{post_title}}</h2>
+			<div>{{post_date}} - {{post_author}}</div>
+			<div>{{post_content}}</div>
+			<img src="{{post_thumbnail}}" alt="{{post_title}}" width="500px" />
+			<a href="{{post_permalink}}">Link</a>
+			<ul>
+				<li>Altezza <strong>{{_cf_altezza}}</strong></li>
+				<li>Larghezza <strong>{{_cf_larghezza}}</strong></li>
+				<li>Peso <strong>{{_cf_peso}}</strong></li>
+			</ul>
+		</main>
+		<footer>
+			<p>
+				© {{year}} F.lli Mazzariol s.r.l.<br />Iscr. REA AL-128904 - Cap.
+				Sociale € 41300 i.v.<br />P.I/C.F. 00153010061
+			</p>
+		</footer>
+	</body>
+</html>
